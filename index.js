@@ -36,8 +36,8 @@ class SiteStalk {
   }
 
   addUrls(urls) {
-    urls.forEach(this._addSiteUrls.bind(this));
-    this.paths.sort();
+    // urls.forEach(this._addSiteUrls.bind(this));
+    // this.paths.sort();
     this._loadNextPath();
   }
 
@@ -238,7 +238,13 @@ class PageStalk {
   }
 }
 
-new SiteStalk('www.blueapron.com', [1280, 962, 768, 320], []);
+new SiteStalk('www.blueapron.com', [1280, 962, 768, 320], [
+  'contact',
+  'cookbook',
+  'gifts',
+  'recycling',
+  'storage',
+]);
 
 // request({
 //   url: 'https://www.blueapron.com/sitemap.xml.gz',
